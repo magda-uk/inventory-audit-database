@@ -100,26 +100,27 @@ DELIMITER ;
 ### 1. Clone the repository:
 
 ```Bash
-git clone https://github.com/magda-uk/CFG-Assignments/tree/main/assignment-3-sql
-cd <your-repo-name>
+git clone https://github.com/magda-uk/inventory-audit-database
+cd inventory-audit-database
 ```
-Execute the SQL script in MySQL Workbench, DBeaver, or via CLI:
+### 2. Execute the SQL script in MySQL Workbench, DBeaver, or via CLI:
 
-Bash
-mysql -u <username> -p < inventory_and_audit.sql
-Verify installation:
+```Bash
+mysql -u <username> -p < inventory-audit-database.sql>
+```
+### 3. Verify installation:
 
-SQL
-USE inventory_and_audit;
+```SQL
+USE inventory-audit-database;
 SHOW TABLES;
 SELECT * FROM Pending_Audits;
-👤 Author
-Developed by Magdalena Domínguez
+```
+
+## 👤 Author
+Developed by **Magdalena Dominguez**
 
 Bridging warehouse operational logistics, Perpetual Inventory data integrity, and relational database systems.
 
 
 ---
-de negocio.
 
-<FollowUp label="Want to draft the bullet points for your CV to showcase this SQL project?" query="How should I describe this SQL inventory and audit project on my CV in English?"/
