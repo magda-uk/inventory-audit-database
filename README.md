@@ -101,8 +101,7 @@ DELIMITER ;
 ### 1. Clone the repository:
 
 ```Bash
-git clone [https://github.com/magda-uk/inventory-audit-database.git](https://github.com/magda-uk/inventory-audit-database.git)
-
+git clone https://github.com/magda-uk/inventory-audit-database.git
 cd inventory-audit-database
 ```
 ### 2. Execute the SQL script in MySQL Workbench, DBeaver, or via CLI:
