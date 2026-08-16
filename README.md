@@ -27,14 +27,15 @@ This project provides a robust relational data model and analytical suite to:
 ## 🗄️ Database Architecture & Entity Relationships
 
 The schema consists of 6 interconnected tables designed to ensure separation of concerns and eliminate redundancy:
-
+```text 
 [roles] <--- (M:N via colleague_roles) ---> [colleagues]
-│
-▼ (1:N)
+                                                │
+                                                ▼ (1:N)
 [products] <─────── (1:N) ───────────> [inventory_units] (WMS System Stock)
-│
-▼ (1:N)
-[physical_audit] (PI Floor Checks)
+                                                │
+                                                ▼ (1:N)
+                                        [physical_audit] (PI Floor Checks)
+```
 
 ### Table Breakdown
 1. **`roles`**: Standardized operational titles (`Picker`, `Loader`, `Stock_auditor`, `Admin`, etc.).
@@ -100,18 +101,19 @@ DELIMITER ;
 ### 1. Clone the repository:
 
 ```Bash
-git clone https://github.com/magda-uk/inventory-audit-database
+git clone [https://github.com/magda-uk/inventory-audit-database.git](https://github.com/magda-uk/inventory-audit-database.git)
+
 cd inventory-audit-database
 ```
 ### 2. Execute the SQL script in MySQL Workbench, DBeaver, or via CLI:
 
 ```Bash
-mysql -u <username> -p < inventory-audit-database.sql>
+mysql -u <username> -p < asda_cdc.sql
 ```
 ### 3. Verify installation:
 
 ```SQL
-USE inventory-audit-database;
+USE inventory_and_audit;
 SHOW TABLES;
 SELECT * FROM Pending_Audits;
 ```
