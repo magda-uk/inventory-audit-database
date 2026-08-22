@@ -1,8 +1,11 @@
 # Central Distribution Centre (CDC) — Inventory & Physical Audit Database
+![SQL](https://img.shields.io/badge/SQL-Advanced_Queries-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Database](https://img.shields.io/badge/Database-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Tool](https://img.shields.io/badge/Tool-DBeaver-382923?style=flat-square)
+![Domain](https://img.shields.io/badge/Context-Perpetual_Inventory_Audit-green?style=flat-square)
 
 A relational database designed to tackle **Stock Drift** and operational discrepancies in high-volume distribution hubs. This project models the lifecycle of inventory pallet units (ILPNs), bridges virtual warehouse management records with physical Perpetual Inventory (PI) audits, and automates discrepancy exception reporting.
 
----
 
 ## 📌 Project Overview & Problem Statement
 
