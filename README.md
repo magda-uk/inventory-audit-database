@@ -1,8 +1,11 @@
 # Central Distribution Centre (CDC) — Inventory & Physical Audit Database
+![SQL](https://img.shields.io/badge/SQL-Advanced_Queries-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Database](https://img.shields.io/badge/Database-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Tool](https://img.shields.io/badge/Tool-DBeaver-382923?style=flat-square)
+![Domain](https://img.shields.io/badge/Context-Perpetual_Inventory_Audit-green?style=flat-square)
 
 A relational database designed to tackle **Stock Drift** and operational discrepancies in high-volume distribution hubs. This project models the lifecycle of inventory pallet units (ILPNs), bridges virtual warehouse management records with physical Perpetual Inventory (PI) audits, and automates discrepancy exception reporting.
 
----
 
 ## 📌 Project Overview & Problem Statement
 
@@ -101,8 +104,7 @@ DELIMITER ;
 ### 1. Clone the repository:
 
 ```Bash
-git clone [https://github.com/magda-uk/inventory-audit-database.git](https://github.com/magda-uk/inventory-audit-database.git)
-
+git clone https://github.com/magda-uk/inventory-audit-database.git
 cd inventory-audit-database
 ```
 ### 2. Execute the SQL script in MySQL Workbench, DBeaver, or via CLI:
